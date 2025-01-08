@@ -110,10 +110,6 @@ def _bittest(data: int, bit: int):
 
 
 def device_filter(device: BLEDevice, advertisement_data: AdvertisementData) -> bool:
-    uuids = advertisement_data.service_uuids
-    if str(UUID_SERVICE) in uuids:
-        return True
-
     if device.name == DEVICE_NAME:
         return True
 
