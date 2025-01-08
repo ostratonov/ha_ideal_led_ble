@@ -3,7 +3,7 @@
   "name": "iDeal LED BLE",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/led_ble/",
-  "dependencies": [],
+  "dependencies": ["bluetooth"],
   "codeowners": ["@koying", "@sstratonov"],
   "bluetooth": [
     { "local_name": "ISP-*" }
